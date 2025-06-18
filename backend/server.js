@@ -381,7 +381,7 @@ app.use('/assets', express.static(path.join(__dirname, 'public', 'assets')));
 
 // Rutas básicas
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "public", "catalogo.html"));
+    res.sendFile(path.join(__dirname, "public", "inicio.html"));
 });
 
 
