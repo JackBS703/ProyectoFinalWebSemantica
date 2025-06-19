@@ -53,19 +53,17 @@ If you don’t have them yet, download and install them from the official links 
 
 Open your terminal and run:
 
-```
+```bash
 git clone https://github.com/your-username/socialbkland.git  
-```
-Then go to the project folder:
-```
-cd socialbkland/backend
+
+cd socialbkland
 ```
 
 
 ### 3. Install dependencies
 
-Inside the `backend` folder, run:
-```
+Inside the root folder, run:
+```bash
 npm install
 ```
 
@@ -89,9 +87,13 @@ Keep both terminals open while using the app.
 
 ### 5. Run the server
 
+**Note: Remember to create a .env file in the root folder with the env variable MONGO_URI=[Uri to Mongo]**
+
 Start the backend server by running:
 
-node server.js
+```bash
+npm start
+```
 
 You should see a message confirming the server is running on port 5000.
 

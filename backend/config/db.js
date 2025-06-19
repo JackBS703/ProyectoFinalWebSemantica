@@ -2,6 +2,9 @@ const mongoose = require("mongoose");
 require("dotenv").config(); // Cargar variables de entorno
 
 const connectDB = async () => {
+
+    console.log(process.env.MONGO_URI);
+
     try {
         const dbConnection = await mongoose.connect(process.env.MONGO_URI, {
             
