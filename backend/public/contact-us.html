@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="./assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./assets/css/contact-us.css" />
+    <link rel="stylesheet" href="./assets/css/notificaciones.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/images/icono.png" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/images/Logo-1.png"
+        alt="Ir a Home"
+        style="display: block; width: 180px; height: auto; border-radius: 8px"
+      />
+      <nav class="navigation">
+        <ul>
+          <li><a href="./inicio.html">Inicio</a></li>
+          <li><a href="./catalogo.html">Biblioteca</a></li>
+          <li><a href="./comunidades.html">Comunidades</a></li>
+          <li><a href="./mis-libros.html">Mis libros</a></li>
+          <li><a href="./nosotros.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <div class="user-actions">
+        <button id="notification-btn">
+          🔔 <span id="notification-count"></span>
+        </button>
+        <div id="notifications" class="notification-dropdown"></div>
+        <button class="cart-btn" onclick="window.location.href='/carrito.html'">
+          🛒
+        </button>
+        <div class="user-menu">
+          <a id="userDropdownBtn" class="login-btn" href="./inicio.html">
+            👤 <span id="userGreeting">Mi Cuenta</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2 class="form-title">Formulario de Contacto</h2>
+
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="fullname" class="required">Nombre Completo</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                class="form-control"
+                required
+              />
+              <i class="fas fa-user input-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="required">Correo Electrónico</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+              <i class="fas fa-envelope input-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber">Número de Teléfono</label>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                class="form-control"
+              />
+              <i class="fas fa-phone input-icon"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="required">Mensaje</label>
+            <div class="input-wrapper">
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                required
+                maxlength="512"
+                placeholder="Escribe tu mensaje aquí..."
+              ></textarea>
+              <i class="fas fa-comment input-icon"></i>
+              <div class="character-counter" id="charCounter">0/512</div>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo"></div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://t.me" target="_blank" aria-label="Telegram"
+            ><i class="fab fa-telegram"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="mailto:support@socialbkland.com" aria-label="Gmail"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script src="./assets/js/contact-us.js"></script>
+</html>

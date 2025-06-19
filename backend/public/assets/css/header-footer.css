@@ -1,135 +1,143 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #191919;
+}
+
 /* Header */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 40px;
-    background-color: #666666;
-    color: #FFFFFF;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background-color: #666666;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-    width: 160px;
-    height: 50px;
-    background-image: url('/assets/images/Logo-1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 160px;
+  height: 50px;
+  background-image: url("/assets/images/Logo-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Navegación */
 .navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
 }
 
 .navigation ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 6px 10px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .navigation ul li a:hover {
-    background-color: #1E90FF;
-    color: #FFFFFF;
+  background-color: #1e90ff;
+  color: #ffffff;
 }
 
 /* Botón de notificaciones */
 .notification-btn {
-    background: none;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    color: #FFFFFF;
-    margin-left: 12px;
-    transition: color 0.3s;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 12px;
+  transition: color 0.3s;
 }
 
 .notification-btn:hover {
-    color: #1E90FF;
+  color: #1e90ff;
 }
 
 /* Botones de acción del usuario */
 .user-actions {
-    display: flex;
-    gap: 15px;
-    align-items: center;
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 .user-actions button {
-    background-color: #666666;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    font-size: 14px;
-    padding: 6px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background-color: #666666;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .user-actions button:hover {
-    background-color: #1E90FF;
-    border-color: #1E90FF;
-    color: #FFFFFF;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+  color: #ffffff;
 }
 
 /* Imagen botón (si lo usas para links o algo visual) */
 #imageButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #imageButton:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 #imageButton img {
-    display: block;
-    width: 180px;
-    height: auto;
-    border-radius: 8px;
+  display: block;
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
 }
 .floating-faq-btn {
-    position: fixed;
-    bottom: 80px;
-    right: 35px; 
-    background-color: #1E90FF;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    box-shadow: 0 4px 8px rgba(25, 25, 25, 0.2);
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    z-index: 999;
+  position: fixed;
+  bottom: 80px;
+  right: 35px;
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(25, 25, 25, 0.2);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  z-index: 999;
 }
 
 .floating-faq-btn:hover {
-    background-color: #1C86EE;
-    color: white;
-    text-decoration: none;
+  background-color: #1c86ee;
+  color: white;
+  text-decoration: none;
 }
 
 /* Paso 1: Forzar que html y body ocupen toda la altura de la pantalla */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -147,153 +155,159 @@ main {
   box-sizing: border-box;
 }
 .main-container {
-  width: 90%;               /* Puedes ajustar: 90%, 95%, 1000px, etc. */
-  max-width: 1200px;        /* Límite para pantallas grandes */
-  margin: 0 auto;           /* Centrado horizontal */
-  padding: 20px 0;          /* Espacio arriba y abajo opcional */
-  box-sizing: border-box;   /* Incluye el padding dentro del ancho */
+  width: 90%; /* Puedes ajustar: 90%, 95%, 1000px, etc. */
+  max-width: 1200px; /* Límite para pantallas grandes */
+  margin: 0 auto; /* Centrado horizontal */
+  padding: 20px 0; /* Espacio arriba y abajo opcional */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho */
 }
-
 
 /* Footer */
 footer {
-    background-color: #666666;
-    color: #FFFFFF;
-    padding: 30px 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-shrink: 0;
-
-    
-
+  background-color: #666666;
+  color: #ffffff;
+  padding: 30px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-shrink: 0;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-logo {
-    width: 160px;
-    height: 50px;
-    background-image: url('/assets/images/Logo-1.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  width: 160px;
+  height: 50px;
+  background-image: url("/assets/images/Logo-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Redes sociales */
 .footer-social {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .footer-social a {
-    text-decoration: none;
-    font-size: 28px;
-    color: #FFFFFF;
-    transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  font-size: 28px;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
-    transform: scale(1.2);
-    color: #1E90FF;
+  transform: scale(1.2);
+  color: #1e90ff;
 }
 
 /* ==== Modal de Información de Usuario ==== */
 #userInfoModal.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-    animation: fadeIn 0.3s ease;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  animation: fadeIn 0.3s ease;
 }
 
 #userInfoModal .modal-content {
-    background-color: #ffffff;
-    margin: 8% auto;
-    padding: 30px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 420px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-    animation: slideIn 0.3s ease;
-    color: #333;
+  background-color: #ffffff;
+  margin: 8% auto;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slideIn 0.3s ease;
+  color: #333;
 }
 
 #userInfoModal .close-btn {
-    position: absolute;
-    top: 18px;
-    right: 22px;
-    font-size: 26px;
-    font-weight: bold;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.2s ease;
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
 #userInfoModal .close-btn:hover {
-    color: #e74c3c;
+  color: #e74c3c;
 }
 
 #userInfoModal .modal-title {
-    text-align: center;
-    margin-bottom: 25px;
-    color: #1E90FF;
-    font-size: 1.6rem;
-    font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e90ff;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 #userInfoModal .user-info-group p {
-    font-size: 1rem;
-    margin-bottom: 12px;
+  font-size: 1rem;
+  margin-bottom: 12px;
 }
 
 #userInfoModal .user-info-group strong {
-    color: #555;
+  color: #555;
 }
 
 #userInfoModal .logout-btn {
-    margin-top: 25px;
-    background-color: #e74c3c;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 25px;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 #userInfoModal .logout-btn:hover {
-    background-color: #c0392b;
+  background-color: #c0392b;
 }
 
 #userInfoModal .logout-btn:active {
-    transform: scale(0.97);
+  transform: scale(0.97);
 }
 
 /* Animaciones */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-    from { transform: translateY(-25px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-25px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
