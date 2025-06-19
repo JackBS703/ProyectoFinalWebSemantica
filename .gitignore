@@ -1,0 +1,5 @@
+node_modules
+
+/backend/cache/
+
+/backend/public/assets/images/
